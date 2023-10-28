@@ -140,19 +140,15 @@ public class Photo extends AppCompatActivity {
                 }
                 if (index == 0) {
                     textView1.setText(entryName);
-
                     imageOne.setImageBitmap(b);
 
                 } else if (index == 1) {
                     textView2.setText(entryName);
-
                     imageTwo.setImageBitmap(b);
 
                 } else if (index == 2) {
                     textView3.setText(entryName);
-
                     imageThree.setImageBitmap(b);
-
                 }
                 index++;
             }
@@ -165,7 +161,6 @@ public class Photo extends AppCompatActivity {
 
     public void startCamera(View view) {
         Intent cam_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
         startActivityForResult(cam_intent, 1);
     }
 
